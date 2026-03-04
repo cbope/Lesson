@@ -1,0 +1,33 @@
+# Generates a random insults
+
+from random import choice
+
+adjectives = ["stupid", "lazy", "ugly", "smelly", "dumb"]
+nouns = ["donkey", "monkey", "pig", "cow", "goat", "turnip"]
+
+def generate_insult():
+    adj = choice(adjectives)
+    noun = choice(nouns)
+    insult = "You are a " + adj + " " + noun
+    return insult
+
+def read_name():
+    name = input("What is your name? ")
+    return name
+
+name = ""
+user_answer = ""
+
+name = read_name()
+while user_answer != "no":
+    if name == "Chris":
+        print("Hello Chris, you are a great person!")
+    else:
+        insult = generate_insult()
+        print(name + ", " + insult)
+
+    user_answer = input("Do you want another insult? (yes/no) ")
+
+
+
+
