@@ -1,0 +1,5 @@
+YAML Ain't Markup Language
+name: page 1 home page
+ - link: www.smarsfan.com
+name: page 2 about us
+ - link: www.smarsfan.com/about_us
